@@ -1,0 +1,382 @@
+html {
+  font-size: 16px; /* Tamaño base (1rem = 16px) */
+}
+
+nav {
+  position: sticky; /* El nav se mantiene visible al hacer scroll */
+  top: 0; /* Pegado a la parte superior de la ventana */
+  background-color: #1b1d2c; /* Color de fondo del nav */
+  display: flex;
+  align-content: left; /* Alineación del contenido a la izquierda */
+  justify-content: space-between; /* Espacio entre los elementos del nav */
+  height: 45px;
+  width: 100%;
+  font-family: "Poppins", sans-serif; /* Fuente sans-serif para el nav */
+  font-size: 0.85rem;
+}
+
+nav img {
+  width: 50px; /* Ancho fijo para logos o íconos */
+  height: auto; /* Altura automática según proporción */
+  padding-top: 6px; /* Espacio arriba */
+  padding-left: 20px;
+  display: flex;
+  align-items: left;
+  position: absolute;
+}
+
+.menu {
+  color: #f4ede4; /* Color de texto en el menú */
+  list-style: none; /* Elimina viñetas */
+  width: 40%; /* Ancho del menú */
+  height: 100%;
+  display: flex; /* Menú horizontal */
+  align-items: center;
+  justify-content: space-between;
+  align-content: right; /* Espaciado entre elementos */
+  gap: 10px; /* Separación entre elementos */
+  flex-wrap: wrap; /* Permite que el menú se ajuste en varias líneas si es necesario */
+  padding: 0% 20px 0% 400px; /* Espacio a la derecha */
+}
+
+ul.menu {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.menu a {
+  color: #f4ede4; /* Color de los enlaces del menú */
+  text-decoration: none; /* Sin subrayado */
+}
+
+header {
+  background-color: #1b1d2c; /* Color de fondo del encabezado */
+  color: #f4ede4; /* Color del texto del encabezado */
+  text-align: center; /* Centra el texto */
+  font-family: "Averia Serif Libre"; /* Fuente decorativa del encabezado */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bienvenida {
+  font-size: 1.25rem; /* Tamaño mediano del subtítulo de bienvenida */
+  text-align: center;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px; /* Elimina espacio inferior */
+  padding-top: 4%; /* Elimina espacio superior */
+}
+
+.mon {
+  font-size: 3.5rem; /* Tamaño grande del título "Mónada" */
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  margin-top: 0px; /* Elimina espacio superior */
+  margin-bottom: 2px;
+}
+
+.quien {
+  font-size: 1.18rem; /* Tamaño de texto explicativo */
+  font-style: italic; /* Texto en cursiva */
+  font-weight: 580;
+  text-align: center;
+  padding: 0px 5px;
+  max-width: 1200px;
+}
+
+.que {
+  font-size: 1rem; /* Tamaño estándar de texto */
+  text-align: center;
+  padding-bottom: 14%;
+  padding: 20px;
+  margin-top: 0;
+  max-width: 1200px;
+}
+
+.que a {
+  color: #5684b8;
+  text-decoration: underline;
+}
+
+body {
+  margin: 0; /* Elimina márgenes por defecto */
+  padding: 0; /* Elimina relleno por defecto */
+  background-color: #f4ede4; /* Color de fondo del cuerpo de la página */
+}
+
+main {
+  color: #4d201e;
+  text-align: left;
+  font-family: "Poppins";
+  margin: 0px;
+  padding: 0px;
+}
+
+.intro {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.intro a {
+  text-decoration: underline;
+  color: #5684b8;
+}
+/* === Título de la sección === */
+.titulo-seccion {
+  font-size: 1.6rem;
+  font-family: "Averia Serif Libre";
+  color: #1b1d2c;
+  font-weight: bold;
+  margin: 2rem 1.5rem 2%;
+  padding-left: 5.6%;
+}
+
+article {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding-bottom: 1.8%;
+}
+
+/* === Artículo del hongo === */
+
+/* === Fila de contenido principal === */
+.fila-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* === Columnas dentro de la fila === */
+.columna {
+  flex: 1 1 160px;
+  min-width: 140px;
+  box-sizing: border-box;
+}
+
+/* === Bolas visuales (para efectos y potencia) === */
+.bolas {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+  text-align: start;
+}
+
+.bolas span {
+  width: 12px;
+  height: 12px;
+  background-color: #5684b8;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.bolas .gris {
+  background-color: #d3d3d3;
+}
+
+/* === Imagen del hongo y nombre === */
+.imagen-contenedor {
+  text-align: center;
+}
+
+.imagen-contenedor img {
+  width: 250px;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.nombre-hongo {
+  font-size: 1.4rem;
+  color: #5684b8;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* === Descripción general === */
+.descripcion {
+  max-width: 800px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4d201e;
+  margin-top: 1.7rem; /* Ajustar más espacio entre los efectos y la descripción */
+  margin-bottom: 2rem;
+}
+
+/* === Responsive para pantallas pequeñas === */
+@media (max-width: 768px) {
+  .fila-contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .columna {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .imagen-contenedor img {
+    max-width: 180px;
+  }
+
+  .descripcion {
+    text-align: left;
+    max-width: 100%;
+    margin-top: 1rem; /* Asegurar que no esté tan cerca de la imagen */
+  }
+}
+.potencia {
+  text-align: start;
+}
+
+table {
+  margin: 0 auto;
+}
+
+th,
+td {
+  padding: 2px;
+}
+
+.kits {
+  display: flex;
+  flex-direction: column;
+}
+
+.descripcion-kits {
+  padding-left: 7.5%;
+  max-width: 800px;
+}
+
+.instrucciones-section {
+  display: flex;
+}
+
+.kits h2 {
+  padding-left: 7.5%;
+  font-family: "Averia Serif Libre";
+  font-size: 1.6rem;
+  color: #1b1d2c;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+.kits img {
+  width: 320px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.kits .imagen-kits {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.uso {
+  padding-left: 25%;
+  padding-top: 12 px;
+  max-width: 90%;
+  font-size: 1rem;
+  color: #4d201e;
+}
+.uso li {
+  list-style: circle;
+  margin-bottom: 20px;
+}
+
+footer {
+  display: flex; /* Diseño en línea flexible para el contenido */
+  justify-content: space-evenly; /* Espaciado entre los elementos hijos */
+  font-family: "Poppins"; /* Fuente decorativa */
+  font-size: 0.8rem; /* Tamaño pequeño para texto del pie */
+  text-align: flex-start;
+  /* padding: 30px 40px; */
+  margin: 0, auto;
+  width: 100vw;
+}
+
+footer,
+ul,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #5684b8;
+}
+
+footer img {
+  width: 35px;
+  height: auto;
+  margin-right: 10px;
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  padding-top: 60px;
+}
+
+.pie1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: left;
+  margin-bottom: 10px;
+}
+
+.pie1 div {
+  display: flex;
+  align-items: left;
+}
+
+.pie2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: left;
+  margin-bottom: 10px;
+  /* padding-left: 150px; */
+}
+
+.pie2 strong {
+  display: block;
+  font-family: "Averia Serif Libre";
+  color: #1b1d2c;
+  font-size: 0.8rem;
+}
+
+.pie2 ul {
+  margin-top: 0;
+  padding-top: 0;
+}
+.pie2 li {
+  margin-bottom: 10px;
+  width: 150px;
+  height: auto;
+  /* padding-left: 90px; */
+}
+
+.pie3 {
+  text-align: right;
+  position: absolute;
+  right: 39vw;
+  font-family: "Averia Serif Libre";
+  color: #1b1d2c;
+}
